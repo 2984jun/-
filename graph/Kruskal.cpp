@@ -10,36 +10,6 @@ typedef struct
     int w;      //Ȩֵ
 }Edge;
 
-/*
-void InsortSotr(Edge E[],int n)
-{
-    int i,j;
-    Edge temp;
-    for(i=0;i<n;i++)
-    {
-        temp=E[i];
-        for(j=i+1;j<n;j++)
-        {
-            if(temp.w>E[j].w)
-            {
-                temp.w=temp.w ^ E[j].w;
-                E[j].w=temp.w ^ E[j].w;
-                temp.w=temp.w ^ E[j].w;
-            }
-        }
-    }
-}
-*/
-
-
-/*
-int Find(int *vset,int f)
-{
-    while(vset[f]>0)
-        f=vset[f];
-    return f;
-}
-*/
 
 void InsertSort(Edge E[],int n)
 {
@@ -107,23 +77,6 @@ void Kruskal(MatGraph g)
         j++;
     }
     
-
-/*
-        for(i=0;i<g.n;i++)
-        {
-            vset[i]=0;
-        }
-        for(i=0;i<g.n;i++)
-        {
-            start1=Find(vset,E[i].start);
-            end1=Find(vset,E[i].end);
-            if(start1!=end1)
-            {
-                vset[start1]=end1;
-                printf("   (% d,% d):% d\n",start1,end1,E[j].w);
-            }
-        }
-*/
 
 }
 
